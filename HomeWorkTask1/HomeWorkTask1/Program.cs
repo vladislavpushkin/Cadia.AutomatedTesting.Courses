@@ -9,14 +9,6 @@ namespace HomeWorkTask1
         public string phrase1;
         public string phrase2;
 
-        public Phrases()
-        {
-            phrase1 = "Spotty";
-            phrase2 = "Spotty2";
-
-            count++;
-            Print();
-        }
         public Phrases(string _phrase1, string _phrase2)
         {
             phrase1 = _phrase1;
@@ -32,12 +24,10 @@ namespace HomeWorkTask1
             Console.WriteLine("phrase2:" + phrase2);
         }
 
-
         class MainClass
         {
             public static void Main(string[] args)
             {
-
                 Phrases English = new Phrases("Good day!", "Anything new?");
                 Console.WriteLine();
 
@@ -46,8 +36,6 @@ namespace HomeWorkTask1
 
                 Phrases Deutsch = new Phrases("Guten Tag!", "Irgend was Neues?");
                 Console.WriteLine();
-
-
 
                 Console.ReadKey();
             }
