@@ -26,8 +26,10 @@ namespace HomeWorkTask1
 
         class MainClass
         {
-            public static void Main(string[] args)
-            {
+            public static void Main(string[] args) {
+
+                Console.WriteLine("Available phrases are:");
+
                 Phrases English = new Phrases("Good day!", "Anything new?");
                 Console.WriteLine();
 
