@@ -18,6 +18,19 @@ namespace HomeWorkTask1
             Print();
         }
 
+        public Languages(string _English, string _French)
+        {
+            English = _English;
+            French = _French;
+
+            count++;
+            Print();
+        }
+
+        public string French { get; set; }
+
+        public string English { get; set; }
+
         public void Print()
         {
             Console.WriteLine("phrase1:" + phrase1);
