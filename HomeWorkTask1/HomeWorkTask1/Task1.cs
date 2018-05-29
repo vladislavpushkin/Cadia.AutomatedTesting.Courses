@@ -10,7 +10,7 @@ namespace TrainingProject
         public static readonly Dictionary<Language, string[]> Phrases = new Dictionary<Language, string[]>
         {
             [Language.English] = new[] { "Good day!", "What's the news?" },
-            [Language.French] = new[] { "Bonjour!", "Quelles sont les nouvelles?" },
+            [Language.French] = new[] { "Bonjour!", "Quelles sont les nouvelles?" }
         };
 
         //Dispalay list of available languages
@@ -78,10 +78,10 @@ namespace TrainingProject
         //Continue process
         public static bool ContinueFurther()
         {
-            Console.WriteLine("Hit q to try again:");
+            Console.WriteLine("Hit w to try again:");
 
             var SelectedKey = Console.ReadKey().KeyChar;
-            var resumeSelection = SelectedKey.Equals('q');
+            var resumeSelection = SelectedKey.Equals('w');
 
             return resumeSelection;
         }
