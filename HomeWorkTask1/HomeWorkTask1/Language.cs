@@ -1,4 +1,4 @@
-﻿namespace TrainingProject
+﻿namespace HomeWorkTask1
 {
     internal enum Language
     {
