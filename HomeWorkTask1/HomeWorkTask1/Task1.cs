@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace TrainingProject
+namespace HomeWorkTask1
 {
     internal static class Task1
 
