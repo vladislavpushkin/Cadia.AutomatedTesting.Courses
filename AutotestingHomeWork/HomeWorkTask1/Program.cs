@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace HomeWorkTask1
 {
-    internal static class Task1
+    internal static class Program
 
     {
         public static readonly Dictionary<Language, string[]> Phrases = new Dictionary<Language, string[]>
@@ -14,7 +14,7 @@ namespace HomeWorkTask1
         };
 
         //Dispalay list of available languages
-        public static void DisplayLanguages()
+        private static void DisplayLanguages()
         {
             Console.WriteLine("Select language to view phrases:");
 
@@ -25,7 +25,7 @@ namespace HomeWorkTask1
         }
 
         //Locate list of phrases for languages
-        public static string[] GetPhrases(int enumNumber)
+        private static string[] GetPhrases(int enumNumber)
         {
             foreach (var phrase in Phrases)
             {
@@ -39,7 +39,7 @@ namespace HomeWorkTask1
         }
 
         //Dispalay list of phrases
-        public static void DisplayPhrases(string[] phrases)
+        private static void DisplayPhrases(string[] phrases)
         {
             if (phrases == null || !phrases.Any())
             {
@@ -76,7 +76,7 @@ namespace HomeWorkTask1
         }
 
         //Continue process
-        public static bool ContinueFurther()
+        private static bool ContinueFurther()
         {
             Console.WriteLine("Hit w to try again:");
 
